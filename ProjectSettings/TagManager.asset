@@ -8,6 +8,9 @@ TagManager:
   - Button
   - Enemy
   - Box
+  - RedHealth
+  - BlueHealth
+  - Teleporter
   layers:
   - Default
   - TransparentFX

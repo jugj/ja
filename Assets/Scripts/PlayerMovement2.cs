@@ -188,6 +188,14 @@ public class PlayerMovement2 : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if(col.gameObject.CompareTag("BlueHealth"))
+        {
+            Health++;
+        }
+    }
+
     void Start()
     {
         animator.SetBool("Death", false);

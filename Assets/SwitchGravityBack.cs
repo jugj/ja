@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SwitchGravity : MonoBehaviour
+public class SwitchGravityBack : MonoBehaviour
 {
     public Animator animator;
     private bool isCol1;
@@ -98,7 +98,7 @@ public class SwitchGravity : MonoBehaviour
     {
         if (top == false)
         {
-            Player1position.transform.eulerAngles = new Vector3(0, 0, 180f);
+            Player1position.transform.eulerAngles = new Vector3(0, 0, 0f);
         }
         else
         {
@@ -112,13 +112,13 @@ public class SwitchGravity : MonoBehaviour
     {
         if (top2 == false)
         {
-            Player2position.transform.eulerAngles = new Vector3(0, 0, 180f);
+            Player2position.transform.eulerAngles = new Vector3(0, 0, 0f);
         }
         else
         {
             Player2position.transform.eulerAngles = Vector3.zero;
         }
-        playermove2.isFacingRight = !playermove2.isFacingRight;
+        playermove2.isFacingRight = !playermove1.isFacingRight;
         top2 = !top2;
     }
 }
